@@ -12,6 +12,20 @@ has, etc!
 [hubot]: http://hubot.github.com
 [generator-hubot]: https://github.com/github/generator-hubot
 
+### Running ombubot as daemon on a Non-Heroku server
+
+Make sure `tmux` is installed, and then run:
+
+```bash
+% tmux new -s ombubot
+% cd /path/to/ombubot
+% ./bin/hubot -a slack
+<Ctrl-b>-d
+```
+
+This creates a tmux session called `ombubot` under which ombubot runs
+as long as the process is not ended. 
+
 ### Running ombubot Locally
 
 You can test your hubot by running the following, however some plugins will not
