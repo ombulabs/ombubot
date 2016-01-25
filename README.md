@@ -19,7 +19,7 @@ Make sure `tmux` is installed, and then run:
 ```bash
 % tmux new -s ombubot
 % cd /path/to/ombubot
-% ./bin/hubot -a slack
+% foreman start
 <Ctrl-b>-d
 ```
 
